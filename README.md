@@ -12,7 +12,7 @@
 ## Aliases 
 ```
 alias t=terraform
-alias tp="t plan -input=n"
+alias tp="t plan -input=false"
 alias ta="t apply -auto-approve"
 alias td="t destroy -auto-approve"
 
