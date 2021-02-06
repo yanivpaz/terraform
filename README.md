@@ -13,15 +13,13 @@
 ```
 alias t=terraform
 alias ta="t apply"
-alias ta="t destroy"
-
-
+alias td="t destroy"
 ```
 ## Running the examples 
 ```
-export TF_CLI_ARGS=" -input=false -auto-approve"
 export TF_LOG=trace
-terraform destroy 
+ta 
+terraform plan -var-file=variables.tfvars
 ```
 
 

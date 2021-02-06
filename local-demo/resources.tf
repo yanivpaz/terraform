@@ -3,6 +3,6 @@ locals {
 }
 
 resource "local_file" "demo" {
-    content     = "${local.local_size}"
+    content     = local.local_size
     filename = "${path.module}/demo-file"
 }
