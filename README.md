@@ -9,11 +9,19 @@
  rm -f terra*linux*zip
 ```
 
+## Aliases 
+```
+alias t=terraform
+alias ta="t apply"
+alias ta="t destroy"
 
+
+```
 ## Running the examples 
 ```
+export TF_CLI_ARGS=" -input=false -auto-approve"
 export TF_LOG=trace
-terraform destroy -auto-approve
+terraform destroy 
 ```
 
 
