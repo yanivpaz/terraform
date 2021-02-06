@@ -9,6 +9,14 @@
  rm -f terra*linux*zip
 ```
 
+
+## Running the examples 
+```
+export TF_LOG=trace
+terraform destroy -auto-approve
+```
+
+
 ## Links
 https://github.com/ned1313/Getting-Started-Terraform  
 https://github.com/ned1313/Deep-Dive-Terraform  
