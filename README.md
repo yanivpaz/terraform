@@ -30,6 +30,7 @@ terraform plan -var-file=variables.tfvars
 https://github.com/ned1313/Getting-Started-Terraform  
 https://github.com/ned1313/Deep-Dive-Terraform  
 https://github.com/ned1313/Implementing-Terraform-on-AWS  
+https://github.com/PacktPublishing/Terraform-Cookbook
 
 
 ## CFN alternative 
