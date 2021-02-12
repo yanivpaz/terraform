@@ -117,3 +117,21 @@ local_file.demo: Creation complete after 0s [id=17ba0791499db908433b80f37c5fbc89
 
 Apply complete! Resources: 1 added, 0 changed, 1 destroyed.
 ```
+
+## Check the status 
+### terraform state list
+```
+local_file.demo
+```
+
+### terraform state show  local_file.demo
+```
+# local_file.demo:
+resource "local_file" "demo" {
+    content              = "11"
+    directory_permission = "0777"
+    file_permission      = "0777"
+    filename             = "./demo-file"
+    id                   = "17ba0791499db908433b80f37c5fbc89b870084b"
+}
+```
