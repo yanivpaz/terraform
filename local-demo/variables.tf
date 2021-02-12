@@ -1,18 +1,18 @@
-variable "plans" {
+variable "env_type" {
   type = map
   default = {
-    "5USD"  = "1xCPU-1GB"
-    "10USD" = "1xCPU-2GB"
-    "20USD" = "2xCPU-4GB"
+    "dev"  = "dev_price"
+    "uat" = "uat_price"
+    "prod" = "prod_price"
   }
 }
 
 
-variable "storage_sizes" {
+variable "env_price" {
   type = map
   default = {
-    "1xCPU-1GB"  = "25"
-    "1xCPU-2GB"  = "50"
-    "2xCPU-4GB"  = "80"
+    "dev_price"  = "10"
+    "uat_price"  = "20"
+    "prod_price"  = "30"
   }
 }

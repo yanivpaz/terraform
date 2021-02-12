@@ -1,8 +1,8 @@
 locals {
-    local_size = lookup(var.storage_sizes, var.plans["5USD"])
+    local_price = lookup(var.env_price, var.env_type["dev"])
 }
 
 resource "local_file" "demo" {
-    content     = local.local_size
+    content     = local.local_price
     filename = "${path.module}/demo-file"
 }
